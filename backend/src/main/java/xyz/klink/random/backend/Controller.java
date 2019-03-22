@@ -12,11 +12,11 @@ import java.util.Random;
 public class Controller {
 
     @RequestMapping(value = "/int", method = RequestMethod.GET)
-    public Map<String, Integer> integer() {
-        Random random = new Random();
+    public int integer() {
+        /*Random random = new Random();
         Map<String, Integer> response = new HashMap<>(1);
-        response.put("value", random.nextInt());
-        return response;
+        response.put("value", random.nextInt());*/
+        return 12;
     }
 
 }
