@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 interface RandomService {
 
     @RequestMapping(method = RequestMethod.GET, value = "/int")
-    Map<String, Integer> getInteger();
+    int getInteger();
 
 
 }
