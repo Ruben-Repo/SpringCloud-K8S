@@ -1,2 +1,9 @@
-mvn -f backend/pom.xml spring-boot:run
-mvn -f frontend/pom.xml spring-boot:run
+cd frontend
+mvn clean install
+docker build -t rubendocker/frontend-final:latest
+
+cd backend
+mvn clean install
+docker build -t rubendocker/backend-final:latest
+
+kubectl create -f k8s.yaml
