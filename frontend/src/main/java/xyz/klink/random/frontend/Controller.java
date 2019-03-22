@@ -13,7 +13,7 @@ public class Controller {
 
     @RequestMapping("/int")
     public Integer showRandomInteger() {
-        return randomService.getInteger().getValue();
+        return randomService.getInteger();
     }
 
 }
